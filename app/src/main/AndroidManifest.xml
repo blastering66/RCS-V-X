@@ -126,6 +126,12 @@
             android:screenOrientation="portrait"></activity>
 
         <activity
+            android:name="id.tech.verificareolx.Olx_Activity_History_TabSlider"
+            android:theme="@style/ToolBarStyle"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
             android:name="id.tech.verificareolx.InfoToko_Activity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/ToolBarStyle"

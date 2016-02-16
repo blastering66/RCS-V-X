@@ -7,15 +7,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import id.tech.verificareolx.R;
-import id.tech.util.CustomAdapter_HistoryAbsensi;
-import id.tech.util.CustomAdapter_HistoryNotif;
-import id.tech.util.CustomAdapter_History_Branding;
-import id.tech.util.CustomAdapter_History_Issue;
+import id.tech.util.RowData_History;
 import id.tech.util.Parameter_Collections;
-import id.tech.util.RowData_History_Absensi;
 import id.tech.util.RowData_History_Branding;
-import id.tech.util.RowData_History_Issue;
 import id.tech.util.RowData_Notif;
 import id.tech.util.ServiceHandlerJSON;
 import common.view.SlidingTabLayout;
@@ -32,10 +26,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SlidingTabsFragment extends Fragment {
-	static ArrayList<RowData_History_Absensi> data_Absensi;
-	static ArrayList<RowData_History_Branding> data_Branding;
-	static ArrayList<RowData_History_Issue> data_Issue;
+public class Olx_SlidingTabsFragment extends Fragment {
+//	static ArrayList<RowData_History_Absensi> data_Absensi;
+	static ArrayList<RowData_History> data_Branding;
+//	static ArrayList<RowData_History_Issue> data_Issue;
 	static ArrayList<RowData_Notif> data_Notif;
 	ServiceHandlerJSON sh;
 	SharedPreferences spf;
@@ -113,8 +107,8 @@ public class SlidingTabsFragment extends Fragment {
 		}
 
 		Fragment createFragment(int posisi) {
-			return id.tech.verificareolx.ContentFragment.newInstance(mTitle, posisi, data_Absensi,
-					data_Branding, data_Issue, data_Notif);
+			return Olx_ContentFragment.newInstance(mTitle, posisi,
+					data_Branding, data_Notif);
 		}
 
 		CharSequence getTitle() {
@@ -126,19 +120,17 @@ public class SlidingTabsFragment extends Fragment {
 	public class Async_GetAllHistory extends AsyncTask<Void, Void, Void> {
 		DialogFragmentProgress pDialog;
 		String cCode, cMessage;
+		String total_data ="0";
+
 		@Override
 		protected void onPreExecute() {
 			// TODO Auto-generated method stub
 			super.onPreExecute();
-			data_Absensi = new ArrayList<RowData_History_Absensi>();
-			data_Branding = new ArrayList<RowData_History_Branding>();
-			data_Issue = new ArrayList<RowData_History_Issue>();
+			data_Branding = new ArrayList<RowData_History>();
 			data_Notif = new ArrayList<RowData_Notif>();
 			
 			pDialog = new DialogFragmentProgress();
 			pDialog.show(getChildFragmentManager(), "");
-			
-			
 		}
 
 		@Override
@@ -146,10 +138,7 @@ public class SlidingTabsFragment extends Fragment {
 			// TODO Auto-generated method stub
 			try {
 				sh = new ServiceHandlerJSON();
-
-				getData_Absensi();
 				getData_Branding();
-				getData_Issue();
 				getData_Notif();
 			} catch (Exception e) {
 
@@ -163,9 +152,7 @@ public class SlidingTabsFragment extends Fragment {
 			super.onPostExecute(result);
 			pDialog.dismiss();
 
-			mTabs.add(new SamplePagerItem("History Absen"));
 			mTabs.add(new SamplePagerItem("History Branding"));
-			mTabs.add(new SamplePagerItem("History Issue"));
 			mTabs.add(new SamplePagerItem("History Notifikasi"));
 			
 			mViewPager.setAdapter(new SampleFragmentPagerAdapter(
@@ -173,57 +160,31 @@ public class SlidingTabsFragment extends Fragment {
 			mSlidingTableLayout.setViewPager(mViewPager);
 		}
 
-		private void getData_Absensi() {
-			
-			JSONObject jobj = sh.json_get_history_absen(id_pegawai);
-			Log.e("Log Absensi", jobj.toString());
-//			data_Absensi.add(new RowData_History_Absensi("Ridho", "12.00",
-//					"27-11-2014", "Pulang"));
-			try{
-				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
-				if (cCode.equals("1")) {
-					JSONArray jArray = jobj
-							.getJSONArray(Parameter_Collections.TAG_DATA);
-					for (int i = 0; i < jArray.length(); i++) {
-						JSONObject c = jArray.getJSONObject(i);
-						String nama_pegawai = c.getString(Parameter_Collections.TAG_NAMA_PEGAWAI);
-						String jam = c.getString(Parameter_Collections.TAG_JAM_ABSENSI);
-						String tgl = c.getString(Parameter_Collections.TAG_TGL_ABSENSI);
-						String tipe_absen = c.getString(Parameter_Collections.TAG_TIPE_ABSENSI);
-						data_Absensi.add(new RowData_History_Absensi(nama_pegawai, jam, tgl, tipe_absen));
-						
-					}
-				}else{
-					//kosong
-				}
-			}catch(JSONException e){
-				
-			}
-
-		}
-
 		private void getData_Branding() {
-			JSONObject jobj = sh.json_get_history_branding(id_pegawai);
-			Log.e("Log Branding", jobj.toString());
+			JSONObject jObj = sh.json_get_history(id_pegawai);
+//			JSONObject jobj = sh.json_get_history_branding(id_pegawai);
 //			data_Branding.add(new RowData_History_Branding("Telefone", "12.00",
 //					"27-22-2015", "Keterangan"));
 			
 			try{
-				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
-				if (cCode.equals("1")) {
-					JSONArray jArray = jobj
-							.getJSONArray(Parameter_Collections.TAG_DATA);
-					for (int i = 0; i < jArray.length(); i++) {
+				total_data = jObj.getString(Parameter_Collections.TAG_TOTAL_VISIT_MAX_TOKO);
+				if(Integer.parseInt(total_data) > 0){
+					JSONArray jArray = jObj.getJSONArray(Parameter_Collections.TAG_DATA);
+					for(int i=0; i < jArray.length();i++){
 						JSONObject c = jArray.getJSONObject(i);
-						String nama_toko = c.getString(Parameter_Collections.TAG_NAMA_TOKO);
-						String jam = c.getString(Parameter_Collections.TAG_JAM_BUAT);
-						String tgl = c.getString(Parameter_Collections.TAG_TGL_BUAT);
-						String keterangan = c.getString(Parameter_Collections.TAG_KET_UPDATE_BRAND);
-						data_Branding.add(new RowData_History_Branding(nama_toko, jam, tgl, keterangan));
-						
+
+						String nama_outlet = c.getString(Parameter_Collections.TAG_NAMA_OUTLET);
+						String username_visit = c.getString(Parameter_Collections.TAG_USERNAME_OUTLET_VISIT);
+						String email_visit = c.getString(Parameter_Collections.TAG_EMAIL_OUTLET_VISIT);
+						String topup_visit = c.getString(Parameter_Collections.TAG_TOPUP_OUTLET_VISIT);
+
+						String alamat_outlet = c.getString(Parameter_Collections.TAG_ALAMAT_OUTLET);
+						String telepon_outlet = c.getString(Parameter_Collections.TAG_TELEPON_OUTLET);
+						String confirm = c.getString(Parameter_Collections.TAG_CONFIRMED_TOKO);
+
+						data_Branding.add(new RowData_History(nama_outlet,username_visit, email_visit, topup_visit,
+								alamat_outlet,telepon_outlet,confirm));
 					}
-				}else{
-					//kosong
 				}
 			}catch(JSONException e){
 				
@@ -231,34 +192,7 @@ public class SlidingTabsFragment extends Fragment {
 
 		}
 
-		private void getData_Issue() {
-			JSONObject jobj = sh.json_get_history_issue(id_pegawai);
-			Log.e("Log Issue", jobj.toString());
-//			data_Issue.add(new RowData_History_Issue("Telefone", "Samsung",
-//					"12.00", "27-11-2014", "Pesan 1"));
-			try{
-				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
-				if (cCode.equals("1")) {
-					JSONArray jArray = jobj
-							.getJSONArray(Parameter_Collections.TAG_DATA);
-					for (int i = 0; i < jArray.length(); i++) {
-						JSONObject c = jArray.getJSONObject(i);
-						String nama_toko = c.getString(Parameter_Collections.TAG_NAMA_TOKO);
-						String jam = c.getString(Parameter_Collections.TAG_JAM_BUAT);
-						String tgl = c.getString(Parameter_Collections.TAG_TGL_BUAT);
-						String pesan = c.getString(Parameter_Collections.TAG_PESAN_ISSUE);						
-						String brand = c.getString(Parameter_Collections.TAG_BRAND);
-						data_Issue.add(new RowData_History_Issue(nama_toko, brand, jam, tgl, pesan));
-						
-					}
-				}else{
-					//kosong
-				}
-			}catch(JSONException e){
-				
-			}
 
-		}
 
 		private void getData_Notif() {
 			
@@ -290,12 +224,6 @@ public class SlidingTabsFragment extends Fragment {
 			} catch (JSONException e) {
 				cMessage = e.getMessage().toString();
 			}
-
-			// data_Notif.add(new RowData_Notif("", "Judul Pesan 1", "Isinya"));
-			// data_Notif.add(new RowData_Notif("", "Judul Pesan 2", "Isinya"));
-			// data_Notif.add(new RowData_Notif("", "Judul Pesan 3 ",
-			// "Isinya"));
-			// data_Notif.add(new RowData_Notif("", "Judul Pesan 4", "Isinya"));
 		}
 	}
 

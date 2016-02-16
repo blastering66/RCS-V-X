@@ -17,19 +17,19 @@ import id.tech.verificareolx.Activity_Promo;
 import id.tech.verificareolx.Activity_Promo_Add;
 import id.tech.verificareolx.Activity_Suggest_Store;
 import id.tech.verificareolx.DialogAbsen;
+import id.tech.verificareolx.Olx_Activity_History_TabSlider;
 import id.tech.verificareolx.Olx_DataOutlet_Activity;
-import id.tech.verificareolx.Olx_History_Activity;
 import id.tech.verificareolx.Olx_UpdateBranding_Activity;
 import id.tech.verificareolx.R;
 import id.tech.verificareolx.UpdateBranding_Activity;
 
-public class RecyclerAdapter_MenuUtama extends
-        RecyclerView.Adapter<RecyclerAdapter_MenuUtama.ViewHolder> {
+public class Olx_RecyclerAdapter_MenuUtama extends
+        RecyclerView.Adapter<Olx_RecyclerAdapter_MenuUtama.ViewHolder> {
     private Context context;
     private SharedPreferences sh;
     private Activity activity;
 
-    public RecyclerAdapter_MenuUtama(Context context, Activity activity) {
+    public Olx_RecyclerAdapter_MenuUtama(Context context, Activity activity) {
         // TODO Auto-generated constructor stub
         this.context = context;
         sh = this.context.getSharedPreferences(Parameter_Collections.SH_NAME,
@@ -110,7 +110,7 @@ public class RecyclerAdapter_MenuUtama extends
 //					Intent load = new Intent(v.getContext(),
 
                         Intent loadHistory_Activity = new Intent(v.getContext(),
-                                Olx_History_Activity.class);
+                                Olx_Activity_History_TabSlider.class);
                         v.getContext
                                 ().startActivity(loadHistory_Activity);
 

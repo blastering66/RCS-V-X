@@ -1,8 +1,7 @@
 package id.tech.verificareolx;
 
-import id.tech.verificareolx.R;
 import id.tech.util.Parameter_Collections;
-import id.tech.util.RecyclerAdapter_MenuUtama;
+import id.tech.util.Olx_RecyclerAdapter_MenuUtama;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,7 +11,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -37,7 +35,7 @@ public class Fragment_MenuUtama extends Fragment{
 		rv = (RecyclerView)v.findViewById(R.id.recycler_view);
 		layoutManager = new GridLayoutManager(getActivity(), 1);
 		rv.setLayoutManager(layoutManager);		
-		adapter = new RecyclerAdapter_MenuUtama(getActivity(), getActivity());		
+		adapter = new Olx_RecyclerAdapter_MenuUtama(getActivity(), getActivity());
 		rv.setAdapter(adapter);
 		
 		return v;

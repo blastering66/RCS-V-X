@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Verificare-Olx/Verificare-Olx/libraryAndroidQuickResponseCode/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-V-X/libraryAndroidQuickResponseCode/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <color name="contents_text">#ff000000</color>
     <color name="encode_view">#ffffffff</color>

@@ -128,7 +128,7 @@ public class Parameter_Collections {
 	public static String KIND_REGION = "region";
 	public static String KIND_HISTORY_INPUTSTOK = "stock_store";
 	public static String KIND_HISTORY= "history";
-	public static String KIND_NOTIF = "pesan";
+	public static String KIND_NOTIF = "notification";
 	public static String KIND_DEVICE = "device";
 	public static String KIND_JENIS_OUTLET= "jenis_outlet";
 
@@ -238,9 +238,9 @@ public class Parameter_Collections {
 	public static String TAG_KET_PRODUK= "keterangan_produk";
 	public static String TAG_TIPE_PRODUK= "tipe_produk";
 	
-	public static String TAG_ID_PESAN= "id_pesan";
-	public static String TAG_JUDUL_PESAN= "judul_pesan";
-	public static String TAG_PESAN = "pesan";
+	public static String TAG_ID_PESAN= "id_notification";
+	public static String TAG_JUDUL_PESAN= "notification_title";
+	public static String TAG_PESAN = "notification_message";
 	public static String TAG_TGL_PESAN = "tanggal_kirim_pesan";
 	public static String TAG_JAM_PESAN = "jam_kirim_pesan";
 	public static String TAG_CREATOR_PESAN = "pembuat_pesan";

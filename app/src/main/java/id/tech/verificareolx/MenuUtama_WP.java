@@ -1,26 +1,17 @@
 package id.tech.verificareolx;
 
-import java.util.ArrayList;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import id.tech.util.RecyclerAdapter_Slider_Empty;
-import id.tech.verificareolx.R;
-import id.tech.util.GPSTracker;
 import id.tech.util.Parameter_Collections;
-import id.tech.util.RecyclerAdapter_MenuUtama;
 import id.tech.util.RecyclerAdapter_Slider;
-import id.tech.util.RecyclerItemClickListener;
-import id.tech.util.RowData_Produk;
-import id.tech.util.RowData_Toko;
 import id.tech.util.ServiceHandlerJSON;
-import id.tech.util.SimpleDividerItemDecoration;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Rect;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -30,19 +21,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnItemTouchListener;
-import android.support.v7.widget.RecyclerView.State;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MenuUtama_WP extends ActionBarActivity {

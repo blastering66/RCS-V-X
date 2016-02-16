@@ -2,33 +2,20 @@ package id.tech.verificareolx;
 
 import java.util.ArrayList;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import id.tech.verificareolx.R;
-import id.tech.util.CustomAdapter_HistoryAbsensi;
+import id.tech.util.RowData_History;
 import id.tech.util.CustomAdapter_HistoryNotif;
-import id.tech.util.CustomAdapter_History_Branding;
-import id.tech.util.CustomAdapter_History_Issue;
-import id.tech.util.Parameter_Collections;
-import id.tech.util.RowData_History_Absensi;
-import id.tech.util.RowData_History_Branding;
-import id.tech.util.RowData_History_Issue;
+import id.tech.util.Olx_CustomAdapter_History_Branding;
 import id.tech.util.RowData_Notif;
-import id.tech.util.ServiceHandlerJSON;
-import android.os.AsyncTask;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class ContentFragment extends Fragment {
+public class Olx_ContentFragment extends Fragment {
 	private static final String KEY_TITLE = "title";
 	private static final String KEY_ID = "id";
 
@@ -36,32 +23,24 @@ public class ContentFragment extends Fragment {
 	String namaAbsen, namaBranding, namaIssue;
 	TextView title;
 
-	static ArrayList<RowData_History_Absensi> data_Absensi;
-	static ArrayList<RowData_History_Branding> data_Branding;
-	static ArrayList<RowData_History_Issue> data_Issue;
+	static ArrayList<RowData_History> data_Branding;
 	static ArrayList<RowData_Notif> data_Notif;
 
 	ListView ls;
 
-	CustomAdapter_HistoryAbsensi adapterAbsensi;
-	CustomAdapter_History_Branding adapterBranding;
-	CustomAdapter_History_Issue adapterIssue;
+	Olx_CustomAdapter_History_Branding adapterBranding;
 	CustomAdapter_HistoryNotif adapterNotif;
 
-	public static ContentFragment newInstance(CharSequence title, int posisi,
-			ArrayList<RowData_History_Absensi> data_absen,
-			ArrayList<RowData_History_Branding> data_brand,
-			ArrayList<RowData_History_Issue> data_issue,
+	public static Olx_ContentFragment newInstance(CharSequence title, int posisi,
+			ArrayList<RowData_History> data_brand,
 			ArrayList<RowData_Notif> data_notif) {
 		Bundle bundle = new Bundle();
 		bundle.putCharSequence(KEY_TITLE, title);
 		bundle.putInt(KEY_ID, posisi);
-		ContentFragment fragment = new ContentFragment();
+		Olx_ContentFragment fragment = new Olx_ContentFragment();
 		fragment.setArguments(bundle);
 
-		data_Absensi = data_absen;
 		data_Branding = data_brand;
-		data_Issue = data_issue;
 		data_Notif = data_notif;
 
 		return fragment;
@@ -77,18 +56,10 @@ public class ContentFragment extends Fragment {
 		ls = (ListView) v.findViewById(R.id.listview);
 
 		if (posisi == 0) {
-			adapterAbsensi = new CustomAdapter_HistoryAbsensi(getActivity(), 0,
-					0, data_Absensi);
-			ls.setAdapter(adapterAbsensi);
-		} else if (posisi == 1) {
-			adapterBranding = new CustomAdapter_History_Branding(getActivity(),
+			adapterBranding = new Olx_CustomAdapter_History_Branding(getActivity(),
 					0, data_Branding);
 			ls.setAdapter(adapterBranding);
-		} else if (posisi == 2) {
-			adapterIssue = new CustomAdapter_History_Issue(getActivity(), 0,
-					data_Issue);
-			ls.setAdapter(adapterIssue);
-		} else if (posisi == 3) {
+		}else if (posisi == 1) {
 			adapterNotif = new CustomAdapter_HistoryNotif(getActivity(), 0,
 					data_Notif);
 			ls.setAdapter(adapterNotif);
@@ -118,12 +89,8 @@ public class ContentFragment extends Fragment {
 		ls = (ListView) view.findViewById(R.id.listview);
 
 		if (posisi == 0) {
-			ls.setAdapter(adapterAbsensi);
-		} else if (posisi == 1) {
 			ls.setAdapter(adapterBranding);
-		} else if (posisi == 2) {
-			ls.setAdapter(adapterIssue);
-		} else if (posisi == 3) {
+		} else if (posisi == 1) {
 			ls.setAdapter(adapterNotif);
 		}
 	}

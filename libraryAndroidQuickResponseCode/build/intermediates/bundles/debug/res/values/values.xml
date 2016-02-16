@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Verificare-Olx/Verificare-Olx/libraryAndroidQuickResponseCode/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-V-X/libraryAndroidQuickResponseCode/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="contents_text">#ff000000</color>
     <color name="encode_view">#ffffffff</color>
@@ -16,7 +16,7 @@
     <color name="viewfinder_frame">#ff526F35</color>
     <color name="viewfinder_laser">#ff7FFF00</color>
     <color name="viewfinder_mask">#6003A9F4</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Verificare-Olx/Verificare-Olx/libraryAndroidQuickResponseCode/src/main/res/values/ids.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-V-X/libraryAndroidQuickResponseCode/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="auto_focus" type="id"/>
     <item name="decode" type="id"/>
@@ -25,7 +25,7 @@
     <item name="quit" type="id"/>
     <item name="restart_preview" type="id"/>
     <item name="return_scan_result" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Verificare-Olx/Verificare-Olx/libraryAndroidQuickResponseCode/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-V-X/libraryAndroidQuickResponseCode/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Quick Response Code</string>
     <string name="barcode_image">Barcode Image</string>
