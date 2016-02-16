@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="size_padding_double">20dp</dimen>
+    <dimen name="size_padding">10dp</dimen>
+    <dimen name="size_padding_half">5dp</dimen>
+
+    <dimen name="size_text_reminder_countdown">70sp</dimen>
+    <dimen name="size_text_judul">30sp</dimen>
+    <dimen name="size_text_subjudul">22sp</dimen>
+    <dimen name="size_label_btn">20sp</dimen>
+    <dimen name="size_text_big">20sp</dimen>
+    <dimen name="size_text_standard">18sp</dimen>
+    <dimen name="size_text_small">15sp</dimen>
+    <dimen name="size_text_smallest">12sp</dimen>
+</resources>

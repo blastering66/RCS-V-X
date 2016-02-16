@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rcs.htctools.Splashscreen_Activity" >
+
+    <item
+        android:id="@+id/action_send_issue"
+        android:title="Send"
+        android:menuCategory="system"
+        android:icon="@android:drawable/ic_menu_send"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+        
+        <Button
+            android:id="@+id/btn_save_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/txt_savedata"
+            android:textColor="@color/bg_white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/txt_edit_info"
+            android:textColor="@color/bg_white" />
+
+        
+
+        <Button
+            android:id="@+id/btn_infostok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/txt_info_stock"
+            android:textColor="@color/bg_white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/wrapper" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/viewPager"
+                    android:background="@color/bg_black_transparan"
+                    android:padding="10dip" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_nama_toko" />
+
+                    <EditText
+                        android:id="@+id/tv_namatoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:text=""
+                        android:textColor="@color/bg_black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_alamat_toko" />
+
+                    <EditText
+                        android:id="@+id/tv_alamattoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_tlp_toko" />
+
+                    <EditText
+                        android:id="@+id/tv_tlptoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/bg_black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_area_toko" />
+
+                    <EditText
+                        android:id="@+id/tv_areatoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/bg_black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_kota_toko" />
+
+                    <EditText
+                        android:id="@+id/tv_kotatoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/bg_black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_desc_toko" />
+
+                    <EditText
+                        android:id="@+id/tv_desctoko"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/bg_black" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_tambahfoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_btn_rounded"
+                android:padding="10dp"
+                android:text="@string/txt_tambah_toko"
+                android:textColor="@color/bg_white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
