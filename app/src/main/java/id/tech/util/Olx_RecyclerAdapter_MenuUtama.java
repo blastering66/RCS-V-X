@@ -13,15 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import id.tech.verificareolx.Activity_Promo;
-import id.tech.verificareolx.Activity_Promo_Add;
-import id.tech.verificareolx.Activity_Suggest_Store;
-import id.tech.verificareolx.DialogAbsen;
+import id.tech.verificareolx.Olx_DialogAbsen;
 import id.tech.verificareolx.Olx_Activity_History_TabSlider;
 import id.tech.verificareolx.Olx_DataOutlet_Activity;
 import id.tech.verificareolx.Olx_UpdateBranding_Activity;
 import id.tech.verificareolx.R;
-import id.tech.verificareolx.UpdateBranding_Activity;
 
 public class Olx_RecyclerAdapter_MenuUtama extends
         RecyclerView.Adapter<Olx_RecyclerAdapter_MenuUtama.ViewHolder> {
@@ -71,7 +67,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
 
             switch (getAdapterPosition()) {
                 case 0:
-                    Intent load0 = new Intent(v.getContext(), DialogAbsen.class);
+                    Intent load0 = new Intent(v.getContext(), Olx_DialogAbsen.class);
                     v.getContext().startActivity(load0);
 
                     break;
@@ -121,38 +117,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
 
 
                     break;
-                case 4:
-                    if (true) {
 
-                        Intent load = new Intent(v.getContext(), Activity_Promo.class);
-                        v.getContext().startActivity(load);
-                    } else {
-                        showToast("Please absent first", v.getContext());
-                    }
-
-
-                    break;
-                case 5:
-                    Intent loadUpdateBranding_Activity = new Intent(v.getContext(),
-                            UpdateBranding_Activity.class);
-                    v.getContext().startActivity(loadUpdateBranding_Activity);
-
-//                    Intent loadIssue_Activity = new Intent(v.getContext(),
-//                            Issue_Activity.class);
-//                    v.getContext().startActivity(loadIssue_Activity);
-                    break;
-                case 6:
-                    Intent loadSuggest_Activity = new Intent(v.getContext(),
-                            Activity_Suggest_Store.class);
-                    v.getContext().startActivity(loadSuggest_Activity);
-
-                    break;
-                case 7:
-                    Intent PromoActivity = new Intent(v.getContext(),
-                            Activity_Promo_Add.class);
-                    v.getContext().startActivity(PromoActivity);
-
-                    break;
 
 
                 default:
@@ -200,7 +165,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
                 arg0.wrapper.setBackgroundColor(context.getResources().getColor(
                         R.color.color_wp_darkorange));
 //			arg0.tv_label.setText("Info Toko");
-                arg0.tv_label.setText("History Visit Activity");
+                arg0.tv_label.setText("History");
 
 
 //			arg0.img.setImageResource(R.drawable.menu_wp_issue);
@@ -208,43 +173,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
 //					R.color.color_wp_darkpurple));
 //			arg0.tv_label.setText("Photo Activity");
                 break;
-            case 4:
-                arg0.img.setImageResource(R.drawable.menu_wp_penjualan);
-                arg0.wrapper.setBackgroundColor(context.getResources().getColor(
-                        R.color.color_wp_darkpurple));
-//			arg0.tv_label.setText("Input Penjualan");
-                arg0.tv_label.setText("Promo");
 
-
-//                arg0.tv_label.setText("Promo Activity");
-                break;
-            case 5:
-                arg0.img.setImageResource(R.drawable.menu_wp_branding);
-                arg0.wrapper.setBackgroundColor(context.getResources().getColor(
-                        R.color.color_wp_darkblue));
-                arg0.tv_label.setText("Update POP / POSM");
-
-                break;
-            case 6:
-
-                arg0.img.setImageResource(R.drawable.menu_wp_issue);
-                arg0.wrapper.setBackgroundColor(context.getResources().getColor(
-                        R.color.color_wp_darkgreen));
-                arg0.tv_label.setText("Competitor Issues");
-
-//                arg0.img.setImageResource(R.drawable.menu_wp_history);
-//                arg0.wrapper.setBackgroundColor(context.getResources().getColor(
-//                        R.color.color_wp_darkorange));
-//                arg0.tv_label.setText("Suggest Store");
-                break;
-            case 7:
-                arg0.img.setImageResource(R.drawable.menu_wp_penjualan);
-                arg0.wrapper.setBackgroundColor(context.getResources().getColor(
-                        R.color.color_wp_darkpurple));
-//			arg0.tv_label.setText("Logout");
-//			arg0.tv_label.setText("All History");
-                arg0.tv_label.setText("Add Promo Activity");
-                break;
 
             default:
                 break;

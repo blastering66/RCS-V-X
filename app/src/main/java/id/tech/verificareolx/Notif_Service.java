@@ -20,20 +20,7 @@ import com.google.android.gms.iid.InstanceID;
 import org.json.JSONObject;
 
 import id.tech.util.Parameter_Collections;
-import id.tech.util.ServiceHandlerJSON;
-
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.widget.ProgressBar;
-import android.widget.TextView;
+import id.tech.util.Olx_ServiceHandlerJSON;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -86,7 +73,7 @@ public class Notif_Service extends Service{
 				String imei = mngr.getDeviceId();
 
 
-				ServiceHandlerJSON sh = new ServiceHandlerJSON();
+				Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 
 				JSONObject jObj = sh.json_register_GCM_to_Server(tokenID,imei);
 

@@ -25,7 +25,7 @@ import java.util.List;
 
 import id.tech.util.Parameter_Collections;
 import id.tech.util.RowData_JenisOutlet;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 
 /**
  * Created by macbook on 2/3/16.
@@ -83,7 +83,7 @@ public class Olx_DataOutlet_Activity extends AppCompatActivity{
 
         @Override
         protected Void doInBackground(Void... params) {
-            ServiceHandlerJSON sh = new ServiceHandlerJSON();
+            Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
             JSONObject jobj = sh.json_get_jenis_outlet();
 
             try{
@@ -141,14 +141,14 @@ public class Olx_DataOutlet_Activity extends AppCompatActivity{
     }
 
     private class AsyncTask_UpdateDataOutlet extends AsyncTask<Void, Void,Void>{
-        DialogFragmentProgress dialogProgress;
+        Olx_DialogFragmentProgress dialogProgress;
         String outlet_Phone, outlet_Address,outlet_Email, outlet_Lokasi, outlet_Region;
         String row_count, error_message, kode_outlet;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialogProgress = new DialogFragmentProgress();
+            dialogProgress = new Olx_DialogFragmentProgress();
             dialogProgress.show(getSupportFragmentManager(), "");
 
             outlet_Phone = ed_outlet_phone.getText().toString();
@@ -160,7 +160,7 @@ public class Olx_DataOutlet_Activity extends AppCompatActivity{
 
         @Override
         protected Void doInBackground(Void... params) {
-            ServiceHandlerJSON sh = new ServiceHandlerJSON();
+            Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 
             JSONObject jObj = sh.json_update_dataoutlet(outlet_Address, outlet_Phone, selected_id_jenis_outlet
                     ,outlet_Region,lati,longi, outlet_Lokasi,outlet_Email);
@@ -185,14 +185,14 @@ public class Olx_DataOutlet_Activity extends AppCompatActivity{
                 spf.edit().putString(Parameter_Collections.SH_KODE_OUTLET, kode_outlet).commit();
                 spf.edit().putBoolean(Parameter_Collections.SH_OUTLET_UPDATED, true).commit();
 
-                DialogLocationConfirmation dialog = new DialogLocationConfirmation();
+                Olx_DialogLocationConfirmation dialog = new Olx_DialogLocationConfirmation();
                 dialog.setContext(getApplicationContext());
                 dialog.setText("Input Data Outlet Success");
                 dialog.setFrom(9);
                 dialog.setCancelable(false);
                 dialog.show(getSupportFragmentManager(), "");
             }else{
-                DialogLocationConfirmation dialog = new DialogLocationConfirmation();
+                Olx_DialogLocationConfirmation dialog = new Olx_DialogLocationConfirmation();
                 dialog.setContext(getApplicationContext());
                 if(error_message.equals("No value for row_count")){
                     dialog.setText("Toko sudah terdaftar");

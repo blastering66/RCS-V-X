@@ -31,7 +31,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".Splashscreen_Activity"
+        <activity android:name=".Olx_Splashscreen_Activity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,59 +41,14 @@
         </activity>
 
         <activity
-            android:name="id.tech.verificareolx.Activity_Promo"
-            android:theme="@style/SearchbarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.Activity_Promo_Add"
-            android:theme="@style/SearchbarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.Activity_Store"
-            android:theme="@style/SearchbarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.Activity_Suggest_Store"
-            android:theme="@style/SearchbarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.Activity_Store_Review"
-            android:theme="@style/SearchbarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.Activity_Stock"
-            android:theme="@style/SearchbarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.MenuUtama_Activity"
-            android:theme="@style/ToolBarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.MenuUtama_WP"
+            android:name=".Olx_MenuUtama_WP"
             android:theme="@style/ToolBarFullscreenStyle"
             android:screenOrientation="portrait"></activity>
 
         <activity
-            android:name="id.tech.verificareolx.Login_Activity"
+            android:name=".Olx_Login_Activity"
             android:theme="@style/ToolBarStyle"
             android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.Issue_Activity"
-            android:theme="@style/ToolBarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-        android:name="id.tech.verificareolx.UpdateBranding_Activity"
-        android:theme="@style/ToolBarStyle"
-        android:screenOrientation="portrait"></activity>
 
         <activity
             android:name="id.tech.verificareolx.Olx_UpdateBranding_Activity"
@@ -132,23 +87,7 @@
 
 
         <activity
-            android:name="id.tech.verificareolx.InfoToko_Activity"
-            android:windowSoftInputMode="stateHidden"
-            android:theme="@style/ToolBarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.InputPenjualanManual_Activity"
-            android:theme="@style/ToolBarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.InputPenjualanScan_Activity"
-            android:theme="@style/ToolBarStyle"
-            android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name="id.tech.verificareolx.DialogNamaOutlet"
+            android:name=".Olx_DialogNamaOutlet"
             android:theme="@style/MyActivityDialogTheme"></activity>
 
         <activity
@@ -156,61 +95,16 @@
             android:theme="@style/MyActivityDialogTheme"></activity>
 
         <activity
-            android:name="id.tech.verificareolx.UploadImageDialog"
+            android:name=".Olx_UploadImageDialog"
             android:theme="@style/MyActivityDialogTheme"></activity>
         <activity
-            android:name="id.tech.verificareolx.DialogHargaProduk"
+            android:name=".Olx_DialogAbsen"
             android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogAbsen"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogPindahToko"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogFormInputProduk"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogFormInputProdukImei"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogFormPenjualanProduk"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogTambahFoto"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogTransfer"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogChooserInputStok"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogChooserInputPennjualan"
-            android:theme="@style/MyActivityDialogTheme"></activity>
-        <activity
-            android:name="id.tech.verificareolx.DialogLocationConfirmation"
 
-            android:theme="@style/MyActivityDialogTheme"></activity>
 
         <activity
             android:name="id.tech.verificareolx.Notif_Detail_Activity"
             android:theme="@style/DialogTheme"></activity>
-
-        <activity android:name="id.tech.verificareolx.ScanAbsen_Activity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name="id.tech.verificareolx.ScanIstirahat_Activity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name="id.tech.verificareolx.ScanPindahToko_Activity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name="id.tech.verificareolx.ScanInputProduk_Activity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name="id.tech.verificareolx.ScanPenjualan_Activity"
-            android:screenOrientation="landscape"></activity>
-
-        <activity android:name="id.tech.verificareolx.Activity_Scrolling"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"></activity>
 
         <service android:name="id.tech.verificareolx.Notif_Service" android:exported="false" >
             <intent-filter>

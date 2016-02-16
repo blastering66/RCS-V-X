@@ -9,9 +9,8 @@ import org.json.JSONObject;
 
 import id.tech.util.RowData_History;
 import id.tech.util.Parameter_Collections;
-import id.tech.util.RowData_History_Branding;
 import id.tech.util.RowData_Notif;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 import common.view.SlidingTabLayout;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -31,7 +30,7 @@ public class Olx_SlidingTabsFragment extends Fragment {
 	static ArrayList<RowData_History> data_Branding;
 //	static ArrayList<RowData_History_Issue> data_Issue;
 	static ArrayList<RowData_Notif> data_Notif;
-	ServiceHandlerJSON sh;
+	Olx_ServiceHandlerJSON sh;
 	SharedPreferences spf;
 	String id_pegawai;
 
@@ -118,7 +117,7 @@ public class Olx_SlidingTabsFragment extends Fragment {
 	}
 
 	public class Async_GetAllHistory extends AsyncTask<Void, Void, Void> {
-		DialogFragmentProgress pDialog;
+		Olx_DialogFragmentProgress pDialog;
 		String cCode, cMessage;
 		String total_data ="0";
 
@@ -129,7 +128,7 @@ public class Olx_SlidingTabsFragment extends Fragment {
 			data_Branding = new ArrayList<RowData_History>();
 			data_Notif = new ArrayList<RowData_Notif>();
 			
-			pDialog = new DialogFragmentProgress();
+			pDialog = new Olx_DialogFragmentProgress();
 			pDialog.show(getChildFragmentManager(), "");
 		}
 
@@ -137,7 +136,7 @@ public class Olx_SlidingTabsFragment extends Fragment {
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			try {
-				sh = new ServiceHandlerJSON();
+				sh = new Olx_ServiceHandlerJSON();
 				getData_Branding();
 				getData_Notif();
 			} catch (Exception e) {

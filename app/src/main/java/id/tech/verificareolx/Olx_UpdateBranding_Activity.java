@@ -24,8 +24,6 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.github.pinball83.maskededittext.MaskedEditText;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -37,16 +35,13 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import id.tech.util.CustomAdapter_Img;
 import id.tech.util.GPSTracker;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.Public_Functions;
-import id.tech.util.ThreeDigitNominalWatcher;
 
 public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 	Button btn;
 	String mUrl_Img_00, mUrl_Img_01, mUrl_Img_02, mUrl_Img_03, mUrl_Img_04, mUrl_Img_05, mUrl_Img_06;
-	CustomAdapter_Img adapter;
 	ImageView imgview_00,imgview_01,imgview_02, imgview_03,imgview_04,imgview_05, imgview_06;
 	public static int CODE_UPLOAD = 111;
 	HorizontalScrollView horizontalScroll;
@@ -123,7 +118,7 @@ public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent upload = new Intent(getApplicationContext(),
-						UploadImageDialog.class);
+						Olx_UploadImageDialog.class);
 				startActivityForResult(upload, CODE_UPLOAD);
 				// adapter = new CustomAdapter_Img(getApplicationContext(), 0,
 				// 0, data);
@@ -261,7 +256,7 @@ public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 		ProgressDialog pdialog;
 		String respondMessage;
 		JSONObject jsonResult;
-		DialogFragmentProgress dialogProgress;
+		Olx_DialogFragmentProgress dialogProgress;
 		String cDesc ,cUsername, cPhone, cEmail, cNominal;
 		int serverRespondCode = 0;
 
@@ -275,7 +270,7 @@ public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 		protected void onPreExecute() {
 			// TODO Auto-generated method stub
 			super.onPreExecute();
-			dialogProgress = new DialogFragmentProgress();
+			dialogProgress = new Olx_DialogFragmentProgress();
 			dialogProgress.show(getSupportFragmentManager(), "");
 			
 
@@ -312,7 +307,7 @@ public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 
 				spf.edit().putBoolean(Parameter_Collections.SH_OUTLET_VISITED, true).commit();
 				
-				DialogLocationConfirmation dialog = new DialogLocationConfirmation();
+				Olx_DialogLocationConfirmation dialog = new Olx_DialogLocationConfirmation();
 				dialog.setContext(getApplicationContext());
 				dialog.setText("Input Visit Activity Success");
 				dialog.setFrom(9);
@@ -323,7 +318,7 @@ public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 			}else{
 				dialogProgress.dismiss();
 				
-				DialogLocationConfirmation dialog = new DialogLocationConfirmation();
+				Olx_DialogLocationConfirmation dialog = new Olx_DialogLocationConfirmation();
 				dialog.setContext(getApplicationContext());
 				dialog.setText(result);
 				dialog.setFrom(9);

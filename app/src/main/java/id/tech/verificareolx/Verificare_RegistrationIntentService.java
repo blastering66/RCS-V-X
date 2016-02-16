@@ -18,7 +18,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 import id.tech.util.Parameter_Collections;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 
 /**
  * Created by RebelCreative-A1 on 16/12/2015.
@@ -89,7 +89,7 @@ public class Verificare_RegistrationIntentService extends IntentService {
         TelephonyManager mngr = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
         String imei = mngr.getDeviceId();
 
-        ServiceHandlerJSON sh = new ServiceHandlerJSON();
+        Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 
         JSONObject jObj = sh.json_register_GCM_to_Server(token,imei);
 

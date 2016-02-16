@@ -35,7 +35,7 @@ public class DialogLogout extends DialogFragment{
 				// TODO Auto-generated method stub
 				sh.edit().clear().commit();
 				Toast.makeText(getActivity(), "Logged Out", Toast.LENGTH_LONG).show();
-//				Intent load = new Intent(getActivity(), Login_Activity.class);
+//				Intent load = new Intent(getActivity(), Olx_Login_Activity.class);
 //				getActivity().startActivity(load);
 				getActivity().finish();	
 			}

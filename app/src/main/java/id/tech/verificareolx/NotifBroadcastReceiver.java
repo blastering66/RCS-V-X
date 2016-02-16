@@ -1,19 +1,15 @@
 package id.tech.verificareolx;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import id.tech.verificareolx.R;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.Public_Functions;
 import id.tech.util.RowData_Notif;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -25,7 +21,6 @@ import android.os.AsyncTask;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
-import android.widget.Toast;
 
 public class NotifBroadcastReceiver extends BroadcastReceiver {
 	Context ctx;
@@ -58,7 +53,7 @@ public class NotifBroadcastReceiver extends BroadcastReceiver {
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			if(Public_Functions.isNetworkAvailable(ctx)){
-				ServiceHandlerJSON sh = new ServiceHandlerJSON();
+				Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 				JSONObject jobj = sh.json_cek_notif();
 
 				try {
@@ -128,7 +123,7 @@ public class NotifBroadcastReceiver extends BroadcastReceiver {
 							load.putExtra(Parameter_Collections.EXTRA_PESAN, isi);
 							TaskStackBuilder stackBuilder = TaskStackBuilder
 									.create(ctx);
-							stackBuilder.addParentStack(MenuUtama_Activity.class);
+							stackBuilder.addParentStack(Olx_MenuUtama_WP.class);
 							stackBuilder.addNextIntent(load);
 
 							PendingIntent resultPendingIntent = stackBuilder
@@ -157,7 +152,7 @@ public class NotifBroadcastReceiver extends BroadcastReceiver {
 							load.putExtra(Parameter_Collections.EXTRA_PESAN, isi);
 							TaskStackBuilder stackBuilder = TaskStackBuilder
 									.create(ctx);
-							stackBuilder.addParentStack(MenuUtama_Activity.class);
+							stackBuilder.addParentStack(Olx_MenuUtama_WP.class);
 							stackBuilder.addNextIntent(load);
 
 							PendingIntent resultPendingIntent = stackBuilder
