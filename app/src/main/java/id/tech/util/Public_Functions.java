@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class Public_Functions {
 	public Context ctx;
+
+	//test
 	
 	public Public_Functions(Context ctx) {
 		// TODO Auto-generated constructor stub
