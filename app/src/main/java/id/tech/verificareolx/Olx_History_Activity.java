@@ -22,8 +22,7 @@ import java.util.List;
 import id.tech.util.Olx_RecyclerAdapter_History;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.RowData_History;
-import id.tech.util.RowData_Promo;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 
 public class Olx_History_Activity extends AppCompatActivity{
 	RecyclerView rv;
@@ -65,7 +64,7 @@ public class Olx_History_Activity extends AppCompatActivity{
 
 		@Override
 		protected Void doInBackground(Void... params) {
-			ServiceHandlerJSON sh = new ServiceHandlerJSON();
+			Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 			JSONObject jObj = sh.json_get_history(id_pegawai);
 //			JSONObject jObj = sh.json_get_history("2");
 			try {

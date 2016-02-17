@@ -18,7 +18,6 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import id.tech.verificareolx.R;
@@ -179,7 +178,7 @@ public class RecyclerAdapter_StockList_Search extends  RecyclerView.Adapter<Recy
 
         @Override
         protected Void doInBackground(Void... params) {
-            ServiceHandlerJSON sh = new ServiceHandlerJSON();
+            Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 
             JSONObject jObj = sh.json_insert_stock(id_pegawai,id_toko,id_stock,stock_qty_warehouse,
                     stock_qty_display,note,latitude_stock_store,longitude_stock_store);

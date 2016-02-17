@@ -2,8 +2,8 @@ package id.tech.verificareolx;
 
 import java.util.ArrayList;
 
+import id.tech.util.Olx_CustomAdapter_HistoryNotif;
 import id.tech.util.RowData_History;
-import id.tech.util.CustomAdapter_HistoryNotif;
 import id.tech.util.Olx_CustomAdapter_History_Branding;
 import id.tech.util.RowData_Notif;
 
@@ -29,7 +29,7 @@ public class Olx_ContentFragment extends Fragment {
 	ListView ls;
 
 	Olx_CustomAdapter_History_Branding adapterBranding;
-	CustomAdapter_HistoryNotif adapterNotif;
+	Olx_CustomAdapter_HistoryNotif adapterNotif;
 
 	public static Olx_ContentFragment newInstance(CharSequence title, int posisi,
 			ArrayList<RowData_History> data_brand,
@@ -60,7 +60,7 @@ public class Olx_ContentFragment extends Fragment {
 					0, data_Branding);
 			ls.setAdapter(adapterBranding);
 		}else if (posisi == 1) {
-			adapterNotif = new CustomAdapter_HistoryNotif(getActivity(), 0,
+			adapterNotif = new Olx_CustomAdapter_HistoryNotif(getActivity(), 0,
 					data_Notif);
 			ls.setAdapter(adapterNotif);
 		}

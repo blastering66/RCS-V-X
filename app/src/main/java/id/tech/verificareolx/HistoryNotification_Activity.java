@@ -6,19 +6,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import id.tech.verificareolx.R;
-import id.tech.util.CustomAdapter_HistoryNotif;
-import id.tech.util.GPSTracker;
+import id.tech.util.Olx_CustomAdapter_HistoryNotif;
 import id.tech.util.Parameter_Collections;
-import id.tech.util.Public_Functions;
 import id.tech.util.RowData_Notif;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +24,7 @@ import android.widget.Toast;
 
 public class HistoryNotification_Activity extends ActionBarActivity {
 	ListView ls;
-	CustomAdapter_HistoryNotif adapter;
+	Olx_CustomAdapter_HistoryNotif adapter;
 	ArrayList<RowData_Notif> data;
 
 	@Override
@@ -69,14 +65,14 @@ public class HistoryNotification_Activity extends ActionBarActivity {
 	}
 
 	private class Async_GetHistoryNotif extends AsyncTask<Void, Void, Void> {
-		DialogFragmentProgress pDialog;
+		Olx_DialogFragmentProgress pDialog;
 		String cCode, cMessage;
 
 		@Override
 		protected void onPreExecute() {
 			// TODO Auto-generated method stub
 			super.onPreExecute();
-			pDialog = new DialogFragmentProgress();
+			pDialog = new Olx_DialogFragmentProgress();
 			pDialog.show(getSupportFragmentManager(), "");
 			data = new ArrayList<RowData_Notif>();
 		}
@@ -84,7 +80,7 @@ public class HistoryNotification_Activity extends ActionBarActivity {
 		@Override
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
-			ServiceHandlerJSON sh = new ServiceHandlerJSON();
+			Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 
 			try {
 				JSONObject jObj = sh.json_get_allnotif();
@@ -141,7 +137,7 @@ public class HistoryNotification_Activity extends ActionBarActivity {
 			pDialog.dismiss();
 
 			if (cCode.equals("1")) {
-				adapter = new CustomAdapter_HistoryNotif(
+				adapter = new Olx_CustomAdapter_HistoryNotif(
 						getApplicationContext(), 0, data);
 				ls.setAdapter(adapter);
 			}else{

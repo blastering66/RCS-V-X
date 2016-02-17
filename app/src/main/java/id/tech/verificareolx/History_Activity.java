@@ -1,37 +1,21 @@
 package id.tech.verificareolx;
 
-import id.tech.util.Olx_RecyclerAdapter_History;
-import id.tech.verificareolx.R;
 import id.tech.util.Parameter_Collections;
-import id.tech.util.Public_Functions;
-import common.activities.SampleActivityBase;
 import id.tech.util.RecyclerAdapter_HistoryInputStock;
-import id.tech.util.RecyclerAdapter_Promo;
 import id.tech.util.RowData_History;
 import id.tech.util.RowData_Promo;
-import id.tech.util.ServiceHandlerJSON;
+import id.tech.util.Olx_ServiceHandlerJSON;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBar.Tab;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TabHost;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -81,7 +65,7 @@ public class History_Activity extends AppCompatActivity{
 
 		@Override
 		protected Void doInBackground(Void... params) {
-			ServiceHandlerJSON sh = new ServiceHandlerJSON();
+			Olx_ServiceHandlerJSON sh = new Olx_ServiceHandlerJSON();
 //			JSONObject jObj = sh.json_get_history_inputstock(id_pegawai);
 			JSONObject jObj = new JSONObject();
 			try{
