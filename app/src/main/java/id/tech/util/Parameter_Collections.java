@@ -338,6 +338,7 @@ public class Parameter_Collections {
 	public static String TAG_DEVICE_ACTIVE = "device_active";
 	public static String TAG_DEVICE_UNIQUE_ID = "device_unique_id";
 
+	//test
 }
 
 
