@@ -2,6 +2,181 @@
 <items version="2" >
 
     <item
+<<<<<<< HEAD
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-79c66e55afe16cc4d13290a7b32febeeb3759560.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-ba4997ba0a2d1b6e7afb3191f2d251fe70527181.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\libs\httpmime-4.1.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c78eaaea68d0f36f73b646f08cdb34f1a784239b">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\httpmime-4.1.2-fa627cfcc5a452e4caa7006e737ebef8982638a5.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-289af3700554c26fffa7f3cfdda56a6bce9c485d.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-10466ecfa36f779fbd6b626c4cfba525b6c7dc24.jar" />
+    </item>
+    <item
+        jar="C:\gradle-2.3\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-32110067ab9531ff7d0ab1506a4ad4235a85545c.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-c28faba3c8dad1167336115ef1a11792479244d5.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-35d26c5b524d2e17d00d5425f299b059dc4e7dcf.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3178362320bcf51228835b60ff978efadfd1f783">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-1712ebf6d85876a634eb51a05092b2517b731ae2.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\RCS-V-X\libraryAndroidQuickResponseCode\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3bd73f889a0bb124ba1aae2bcbb4610992166c06">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-c8242fbfb618d22ff8e6eca963d3da030949af2c.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-54f028df2f7bcc9af07269307c4db7e995184424.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-5835cffea61f7b712341083cbad73da7523a854a.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-e86078465cbb491df648cce1d7d721196572d07d.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-d208d316e66be02448fc9093c97c5e3c18a0668b.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-d735172b4056e875d78194fd2c69eff0d465085f.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.github.pinball83\masked-edittext\1.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="86b0dfbd52c89f01fd58aa853cca6e81614d6374">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-5cfc32b4c7e69b5c7fb78d164452ba0b07d00a83.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-d3042c23c58e0eec56b57808cc4d8a9a8ad2b790.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-4af864b1c3574f17029bc1d70e8d04c471d54584.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-51ffda0a56b27dcc723853cc1f6c9eb679239533.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-0a4928d775e555e6ccd1f4d0a494e4dc78234545.jar" />
+    </item>
+    <item
+        jar="C:\gradle-2.3\caches\modules-2\files-2.1\org.jbundle.util.osgi.wrapped\org.jbundle.util.osgi.wrapped.org.apache.http.client\4.1.2\98c86e42679fe7ac066f6c242e0d14f0bce0bb7c\org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2-d27f643023e0d6d74405caec9f335bec026119a4.jar" />
+    </item>
+    <item
+        jar="D:\adt-bundle-windows-x86\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-b0bc2dc07c2e545641b13fcf1df72bf5dd7dd161.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-a08e53022614b6afd2ac7c1dec749bcaeda84e24.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.pkmmte.view\circularimageview\1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-54bbf8d873cb0c6372a90760c96107ed2e660a89.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-3259e2508ee3be02b740c5fa2723dedcbfe89817.jar" />
+=======
         jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -203,43 +378,98 @@
         revision="23.0.1"
         sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
         <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-a80fc1a01ee266e94deb10c9ef067ff22a553e98.jar" />
+>>>>>>> ef0db6d5788306c25275b92c9a6a26475618de33
     </item>
     <item
-        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.pkmmte.view/circularimageview/1.1/jars/classes.jar"
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
-        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-3f59944e4d56de0a4f49569b14e04717c32052a4.jar" />
+        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-0e5dcb7eead988c0a6e29dc1c2e27f3772a912a2.jar" />
     </item>
     <item
-        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-71adb5739f306c115e7a95240550070fc726dcdb.jar" />
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-0cbd8e1b2824af045dde0c8872e2a803237b12db.jar" />
     </item>
     <item
+<<<<<<< HEAD
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-789f58aaca10044e869b67e5c6d0d4edefd54518.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\jars\classes.jar"
+=======
         jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/jars/classes.jar"
+>>>>>>> ef0db6d5788306c25275b92c9a6a26475618de33
         jumboMode="false"
         revision="23.0.1"
-        sha1="997773777cf3904c11d6764fe3b7668538220e49">
-        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-d1cd1faa4db3a86ae00b65904dd66893505f5492.jar" />
+        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-69f96b9811fe8d09498a871d337c2442592a6d27.jar" />
     </item>
     <item
+<<<<<<< HEAD
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\libs\core.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="69ab751723c7f7c8a01fddb1d169a93160fadca7">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\core-f38af28884ca51641859343a929e5a9106dbeb1b.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="95758a2905669affbffc5ddd262921d375674fad">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-0f060affe60d01b3230df1792ec20d92f37451bc.jar" />
+=======
         jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
         <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-ee0cb8ee5cd7bab9e32153d30f23e3e113c282d3.jar" />
+>>>>>>> ef0db6d5788306c25275b92c9a6a26475618de33
     </item>
     <item
-        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.0/jars/classes.jar"
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
-        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-c1773f5892db02bcffcd963136f5a8edfec0a8b8.jar" />
+        sha1="17449c47df35c754b257532052f1270c444f7993">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-0e7202dd7d0dbebca3658f691dcab95a692f3b41.jar" />
     </item>
     <item
+<<<<<<< HEAD
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-fd2ad0e0f73bea4cf800105c6d853613a22dd4ca.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="482de223655d06253cc6a4955d653f8994169500">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-40446c5bdb3ce48ef4a71edf5eb47a4435f96c30.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-b682cadd6f8512e6f6f73abc3a8e066e421bf74c.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-b4b210961ddf18c9f173a39a0b95fb3aaad899f7.jar" />
+=======
         jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -252,20 +482,29 @@
         revision="23.0.1"
         sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
         <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-17c6f47a165f740f480cf31f4530d4c859243156.jar" />
+>>>>>>> ef0db6d5788306c25275b92c9a6a26475618de33
     </item>
     <item
-        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
-        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/classes-51c960facfb583bd274a96ff968336967d3f5a31.jar" />
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-e517b1ae0fad648351c2f1d8e5b3e0357030a2de.jar" />
     </item>
     <item
+<<<<<<< HEAD
+        jar="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\Workspace_Android_Github\RCS-V-X\app\build\intermediates\pre-dexed\debug\classes-b7920a8893b1f0da18fecb6f34b47f609fe580e0.jar" />
+=======
         jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/libs/httpmime-4.1.2.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="c78eaaea68d0f36f73b646f08cdb34f1a784239b">
         <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-V-X/app/build/intermediates/pre-dexed/debug/httpmime-4.1.2-c87ffb6e93f829b5c91be470710e7d5044d3ba92.jar" />
+>>>>>>> ef0db6d5788306c25275b92c9a6a26475618de33
     </item>
 
 </items>

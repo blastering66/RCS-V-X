@@ -56,19 +56,19 @@ public class Parameter_Collections {
 	public static String ARRAY = "";
 	public static String URL_FOTO_ABSEN = "";
 	
-	public static String URL_GAMBAR = "http://www.rcs-indonesia.com/olx/files/original/";
-	public static String URL_GAMBAR_THUMB = "http://www.rcs-indonesia.com/olx/files/thumbnail/";
-	public static String URL_LOGIN = "http://www.rcs-indonesia.com/olx/api/login.php?";
-	public static String URL_GET = "http://www.rcs-indonesia.com/olx/api/get.php?";
-	public static String URL_INSERT = "http://www.rcs-indonesia.com/olx/api/insert.php?";
-	public static String URL_UPDATE = "http://www.rcs-indonesia.com/olx/api/update.php?";
+//	public static String URL_GAMBAR = "http://www.rcs-indonesia.com/olx/files/original/";
+//	public static String URL_GAMBAR_THUMB = "http://www.rcs-indonesia.com/olx/files/thumbnail/";
+//	public static String URL_LOGIN = "http://www.rcs-indonesia.com/olx/api/login.php?";
+//	public static String URL_GET = "http://www.rcs-indonesia.com/olx/api/get.php?";
+//	public static String URL_INSERT = "http://www.rcs-indonesia.com/olx/api/insert.php?";
+//	public static String URL_UPDATE = "http://www.rcs-indonesia.com/olx/api/update.php?";
 
-//	public static String URL_GAMBAR = "http://www.verificare-olx.com/files/original/";
-//	public static String URL_GAMBAR_THUMB = "http://verificare-olx.com/files/thumbnail/";
-//	public static String URL_LOGIN = "http://www.verificare-olx.com/api/login.php?";
-//	public static String URL_GET = "http://www.verificare-olx.com/api/get.php?";
-//	public static String URL_INSERT = "http://www.verificare-olx.com/api/insert.php?";
-//	public static String URL_UPDATE = "http://www.verificare-olx.com/api/update.php?";
+	public static String URL_GAMBAR = "http://verificare-activation.com/files/original/";
+	public static String URL_GAMBAR_THUMB = "http://verificare-activation.com/files/thumbnail/";
+	public static String URL_LOGIN = "http://verificare-activation.com/api/login.php?";
+	public static String URL_GET = "http://verificare-activation.com/api/get.php?";
+	public static String URL_INSERT = "http://verificare-activation.com/api/insert.php?";
+	public static String URL_UPDATE = "http://verificare-activation.com/api/update.php?";
 
 	public static String KIND = "kind";
 
@@ -337,6 +337,9 @@ public class Parameter_Collections {
 	public static String TAG_DEVICE_TOKEN = "device_token";
 	public static String TAG_DEVICE_ACTIVE = "device_active";
 	public static String TAG_DEVICE_UNIQUE_ID = "device_unique_id";
+
+	//test bbbb
+	//new update
 
 }
 

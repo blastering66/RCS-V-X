@@ -54,7 +54,10 @@ public class Verificare_RegistrationIntentService extends IntentService {
             Log.e(TAG, "GCM Registration Token: " + token);
 
             // TODO: Implement this method to send any registration to your app's servers.
-            sendRegistrationToServer(token);
+            boolean registered = sp.getBoolean(Parameter_Collections.SH_GCM_REGISTERED, false);
+            if(!registered){
+                sendRegistrationToServer(token);
+            }
 
             // Subscribe to topic channels
             subscribeTopics(token);

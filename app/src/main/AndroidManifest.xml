@@ -61,10 +61,7 @@
             android:screenOrientation="portrait"></activity>
 
 
-        <activity
-            android:name="id.tech.verificareolx.CekProduk_Activity"
-            android:theme="@style/ToolBarStyle"
-            android:screenOrientation="portrait"></activity>
+
         <activity
             android:name="id.tech.verificareolx.HistoryNotification_Activity"
             android:theme="@style/ToolBarStyle"

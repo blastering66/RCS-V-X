@@ -41,7 +41,6 @@ public class Verificare_Notif_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.verificare_gcm_notif);
 
-
         sh = getSharedPreferences(Parameter_Collections.SH_NAME, Context.MODE_PRIVATE);
         final String message_gcm = sh.getString(Parameter_Collections.SH_GCM_MESSAGE,"Error Get Notif Message");
 
@@ -54,11 +53,12 @@ public class Verificare_Notif_Activity extends AppCompatActivity {
                         PreferenceManager.getDefaultSharedPreferences(context);
                 boolean sentToken = sharedPreferences
                         .getBoolean(Verificare_QuickstartPreferences.SENT_TOKEN_TO_SERVER, false);
-                if (sentToken) {
-                    mInformationTextView.setText(message_gcm);
-                } else {
-                    mInformationTextView.setText("Token Error");
-                }
+//                if (sentToken) {
+//                    mInformationTextView.setText(message_gcm);
+//                } else {
+//                    mInformationTextView.setText("Token Error");
+//                }
+                mInformationTextView.setText( message_gcm);
             }
         };
         mInformationTextView = (TextView) findViewById(R.id.informationTextView);
