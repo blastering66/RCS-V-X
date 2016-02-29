@@ -53,6 +53,7 @@
     <string name="txt_tgl_selesai">Date Finish Program</string>
     <string name="txt_tgl_sales">Date Sales</string>
     <string name="txt_input_image">Input Image</string>
+    <string name="txt_add_image">Add Image</string>
     <string name="txt_submit">Submit</string>
     <string name="txt_login_as">Login As</string>
     <string name="txt_login">Login</string>
@@ -105,6 +106,7 @@
     <string name="max_1">(*) 1 Image Max</string>
     <string name="max_2">(*) 7 Image Max</string>
     <string name="max_3">(*) 5 Image Max</string>
+    <string name="max_4">(*) 3 Image Min -> 7 Image Max</string>
 
     <string-array name="login_as">
         <item>MDS</item>

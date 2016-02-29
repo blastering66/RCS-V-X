@@ -60,7 +60,10 @@
             android:theme="@style/ToolBarStyle"
             android:screenOrientation="portrait"></activity>
 
-
+        <activity
+            android:name="id.tech.verificareolx.Olx_Activity_Gallery"
+            android:theme="@style/ToolBarStyle"
+            android:screenOrientation="portrait"></activity>
 
         <activity
             android:name="id.tech.verificareolx.HistoryNotification_Activity"

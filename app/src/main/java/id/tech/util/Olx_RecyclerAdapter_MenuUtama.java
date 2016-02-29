@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import id.tech.verificareolx.Olx_Activity_Gallery;
 import id.tech.verificareolx.Olx_DialogAbsen;
 import id.tech.verificareolx.Olx_Activity_History_TabSlider;
 import id.tech.verificareolx.Olx_DataOutlet_Activity;
@@ -101,23 +102,30 @@ public class Olx_RecyclerAdapter_MenuUtama extends
 
                     break;
                 case 3:
-
                     if (true) {
 //					Intent load = new Intent(v.getContext(),
-
                         Intent loadHistory_Activity = new Intent(v.getContext(),
-                                Olx_Activity_History_TabSlider.class);
+                                Olx_Activity_Gallery.class);
                         v.getContext
                                 ().startActivity(loadHistory_Activity);
-
 
                     } else {
                         showToast("Please absent first", v.getContext());
                     }
 
-
                     break;
+                case 4:
+                    if (true) {
+//					Intent load = new Intent(v.getContext(),
+                        Intent loadHistory_Activity = new Intent(v.getContext(),
+                                Olx_Activity_History_TabSlider.class);
+                        v.getContext
+                                ().startActivity(loadHistory_Activity);
 
+                    } else {
+                        showToast("Please absent first", v.getContext());
+                    }
+                    break;
 
 
                 default:
@@ -130,7 +138,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
     @Override
     public int getItemCount() {
         // TODO Auto-generated method stub
-        return 4;
+        return 5;
     }
 
     @Override
@@ -161,17 +169,18 @@ public class Olx_RecyclerAdapter_MenuUtama extends
 
                 break;
             case 3:
-                arg0.img.setImageResource(R.drawable.menu_wp_cek_stok);
+                arg0.img.setImageResource(R.drawable.menu_wp_gallery);
                 arg0.wrapper.setBackgroundColor(context.getResources().getColor(
                         R.color.color_wp_darkorange));
+                arg0.tv_label.setText("Input Photo Activity");
+                break;
+
+            case 4:
+                arg0.img.setImageResource(R.drawable.menu_wp_cek_stok);
+                arg0.wrapper.setBackgroundColor(context.getResources().getColor(
+                        R.color.color_wp_darkblue));
 //			arg0.tv_label.setText("Info Toko");
                 arg0.tv_label.setText("History Activity");
-
-
-//			arg0.img.setImageResource(R.drawable.menu_wp_issue);
-//			arg0.wrapper.setBackgroundColor(context.getResources().getColor(
-//					R.color.color_wp_darkpurple));
-//			arg0.tv_label.setText("Photo Activity");
                 break;
 
 
