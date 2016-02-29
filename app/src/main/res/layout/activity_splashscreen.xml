@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_olx"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_olx_stroke" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_presented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/wrapper"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:text="@string/txt_presented_by"
+        android:textSize="@dimen/size_text_big"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/wrapper_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_designed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_designed_by" />
+
+        <ImageView
+            android:id="@+id/img_htc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_getloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_get_loc"
+            android:textColor="@color/blue_ics"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="@string/txt_attention"
+            android:textColor="@color/blue_ics"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_get_loc"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/shadow_floating_button"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_btn_location" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btn_get_refresh"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shadow_floating_button"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_btn_refresh"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txt_retry"
+                        android:textColor="@color/blue_ics"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btn_ok"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shadow_floating_button"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_btn_ok"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txt_ok"
+                        android:textColor="@color/blue_ics"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_loc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/blue_ics"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</RelativeLayout>

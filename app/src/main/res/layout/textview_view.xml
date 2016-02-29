@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardElevation="10dp" >
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/godfather"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <!-- Bottom View Start -->
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="#66ddff00"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <!-- What you want to show -->
+        </LinearLayout>
+        <!-- Bottom View End -->
+        <!-- Surface View Start -->
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_white"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <!-- What you want to show -->
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!-- Surface View End -->
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</android.support.v7.widget.CardView>

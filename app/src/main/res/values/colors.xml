@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#388E3C</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+
+    <color name="primaryColor">#388E3C</color>
+    <color name="primaryColorDark">#4CAF50</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_text_actionbar" >#ffffff</color>
+    <color name="color_text_actionbar_disabled" >#C0C0C0</color>
+
+    <color name="color_text" >#ffffff</color>
+
+    <color name="color_bg" >#EBF4FA</color>
+
+    <color name="edittext_bg" >#ffffff</color>
+    <color name="edittext_text" >#000000</color>
+
+    <color name="divider" >#50000000</color>
+    <color name="black_cat" >#413839</color>
+    <color name="ash_grey" >#666362</color>
+
+    <color name="color_green" >#00ff00</color>
+    <color name="color_red" >#990000</color>
+    <color name="black" >#000000</color>
+    <color name="dark_slate_gray" >#000000</color>
+    <color name="yellow">#ffde00</color>
+    <color name="white" >#ffffff</color>
+
+    <color name="blue_ics">#33b5e5</color>
+    <color name="bg_listview">#D1D0CE</color>
+
+    <color name="transparent">#80ffffff</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_black_transparan">#70000000</color>
+    <color name="bg_white_selected">#C0C0C0</color>
+
+    <color name="color_wp_darkgreen">#0f9d58</color>
+    <color name="color_wp_darkpurple">#800080</color>
+    <color name="color_wp_darkorange">#ff6600</color>
+    <color name="color_wp_darkblue">#4285f4</color>
+</resources>

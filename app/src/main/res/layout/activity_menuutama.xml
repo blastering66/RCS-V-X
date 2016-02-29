@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/radio_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:background="@drawable/selector_btn_rounded_inverted"
+                    android:text="@string/absen_masuk"
+                    android:elevation="20dp"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/radio_pulang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:background="@drawable/selector_btn_rounded"
+                    android:text="@string/absen_pulang"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_absen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_btn_rounded"
+                android:elevation="10dp"
+                android:text="@string/txt_absen"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_inputproduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:text="@string/txt_input_stock"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_cek_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:text="@string/txt_cek_stock"
+            android:textColor="@android:color/white" />
+        
+        <Button
+            android:id="@+id/btn_penjualan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:text="@string/txt_input_sales"
+            android:textColor="@android:color/white" />
+        
+        <Button
+            android:id="@+id/btn_update_branding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:text="@string/txt_update_branding"
+            android:textColor="@android:color/white" />
+        
+        <Button
+            android:id="@+id/btn_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:text="@string/txt_issue"
+            android:textColor="@android:color/white" />
+        
+         <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_rounded"
+            android:text="@string/txt_logout"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>
