@@ -187,7 +187,7 @@ public class Parameter_Collections {
 	public static String TAG_TOPUP_OUTLET_VISIT = "topup_visit";
 	public static String TAG_DESC_OUTLET_VISIT = "desc_visit";
 
-	public static String TAG_DESC_GALLERY = "activity_description";
+	public static String TAG_DESC_GALLERY = "activities_description";
 
 	public static String TAG_NAMA_OUTLET= "nama_outlet";
 	public static String TAG_KODE_OUTLET= "kode_outlet";

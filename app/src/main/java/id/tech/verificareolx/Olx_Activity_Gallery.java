@@ -497,6 +497,10 @@ public class Olx_Activity_Gallery extends AppCompatActivity {
                 serverRespondCode = conn.getResponseCode();
                 respondMessage = conn.getResponseMessage();
 
+                Log.e("Param  URL img  = ", url_gambar00);
+                Log.e("Param  Kind  = ", Parameter_Collections.KIND_ACTIVITY_PHOTO);
+                Log.e("Param  id_pegawai  = ", id_pegawai);
+                Log.e("Param  desc  = ", cDesc);
                 Log.e("RESPOND", respondMessage);
 
                 if (serverRespondCode == 200) {
