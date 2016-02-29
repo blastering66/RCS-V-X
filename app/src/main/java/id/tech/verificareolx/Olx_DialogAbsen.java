@@ -52,28 +52,28 @@ public class Olx_DialogAbsen extends FragmentActivity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (sh.getBoolean(Parameter_Collections.SH_ABSENTED, false)) {
-//					Intent load = new Intent(getApplicationContext(),
-//							ScanAbsen_Activity.class);
-//					load.putExtra(Parameter_Collections.SH_ID_PEGAWAI, sh
-//							.getString(Parameter_Collections.SH_ID_PEGAWAI, ""));
-//					load.putExtra(Parameter_Collections.EXTRA_ABSENSI, "2");
-//					startActivity(load);
-//					finish();
 
-					Intent intent = new Intent();
-					intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+					//OLX
+					Intent load = new Intent(getApplicationContext(),
+							Olx_DialogNamaOutlet.class);
+					load.putExtra(Parameter_Collections.SH_ID_PEGAWAI, sh
+							.getString(Parameter_Collections.SH_ID_PEGAWAI,
+									""));
+					load.putExtra(Parameter_Collections.EXTRA_ABSENSI, "2");
+					startActivity(load);
+					finish();
 
-					try {
-
-						intent.putExtra("return-data", true);
-						intent.putExtra(MediaStore.EXTRA_OUTPUT, "1");
-						startActivityForResult(Intent.createChooser(intent,
-								"Complete action using"), CODE_FOTO_ABSEN_PULANG);
-
-					} catch (ActivityNotFoundException e) {
-						// Do nothing for now
-					}
-
+//					Intent intent = new Intent();
+//					intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+//					try {
+//
+//						intent.putExtra("return-data", true);
+//						intent.putExtra(MediaStore.EXTRA_OUTPUT, "1");
+//						startActivityForResult(Intent.createChooser(intent,
+//								"Complete action using"), CODE_FOTO_ABSEN_PULANG);
+//
+//					} catch (ActivityNotFoundException e) {
+//					}
 				} else {
 					Toast.makeText(getApplicationContext(),
 							"Please Login First", Toast.LENGTH_LONG).show();
@@ -88,32 +88,30 @@ public class Olx_DialogAbsen extends FragmentActivity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (!sh.getBoolean(Parameter_Collections.SH_ABSENTED, false)) {
-//					Intent load = new Intent(getApplicationContext(),
-//							ScanAbsen_Activity.class);
-//					load.putExtra(Parameter_Collections.SH_ID_PEGAWAI, sh
-//							.getString(Parameter_Collections.SH_ID_PEGAWAI,
-//									""));
-//					load.putExtra(Parameter_Collections.EXTRA_ABSENSI, "1");
+
+					//OLX
+					Intent load = new Intent(getApplicationContext(),
+							Olx_DialogNamaOutlet.class);
+					load.putExtra(Parameter_Collections.SH_ID_PEGAWAI, sh
+							.getString(Parameter_Collections.SH_ID_PEGAWAI,
+									""));
+					load.putExtra(Parameter_Collections.EXTRA_ABSENSI, "1");
+					startActivity(load);
+					finish();
+
+//					Intent intent = new Intent();
+//					intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+//					try {
 //
-//					startActivity(load);
-//					finish();
-
-					Intent intent = new Intent();
-					intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
-
-					try {
-
-						intent.putExtra("return-data", true);
-						intent.putExtra(MediaStore.EXTRA_OUTPUT, "1");
-						startActivityForResult(Intent.createChooser(intent,
-								"Complete action using"), CODE_FOTO_ABSEN_MASUK);
-
-					} catch (ActivityNotFoundException e) {
-						// Do nothing for now
-					}
-				} else {
-					Toast.makeText(getApplicationContext(),
-							"Please Logout First", Toast.LENGTH_LONG).show();
+//						intent.putExtra("return-data", true);
+//						intent.putExtra(MediaStore.EXTRA_OUTPUT, "1");
+//						startActivityForResult(Intent.createChooser(intent,
+//								"Complete action using"), CODE_FOTO_ABSEN_MASUK);
+//					} catch (ActivityNotFoundException e) {
+//					}
+//				} else {
+//					Toast.makeText(getApplicationContext(),
+//							"Please Logout First", Toast.LENGTH_LONG).show();
 				}
 			}
 		});

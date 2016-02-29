@@ -32,7 +32,7 @@ import id.tech.util.Parameter_Collections;
 
 public class Olx_DialogNamaOutlet extends FragmentActivity{
 	private EditText ed_NamaOutlet;
-	private ImageView img_Selfie_Landscape,img_Selfie_Portrait;
+//	private ImageView img_Selfie_Landscape,img_Selfie_Portrait;
 	private Button btn, btn_tgl;
 	private String kode_outlet, nama_outlet;
 	private SharedPreferences spf;
@@ -57,21 +57,6 @@ public class Olx_DialogNamaOutlet extends FragmentActivity{
 
 			ed_NamaOutlet.setText(nama_outlet);
 			ed_NamaOutlet.setEnabled(false);
-		}
-
-
-		img_Selfie_Landscape = (ImageView)findViewById(R.id.img_selfie_landscape);
-		img_Selfie_Portrait = (ImageView)findViewById(R.id.img_selfie_portrait);
-		Bitmap bitmap_Selfie = BitmapFactory.decodeFile(Parameter_Collections.URL_FOTO_ABSEN);
-		int bitmap_w = bitmap_Selfie.getWidth();
-		int bitmap_h = bitmap_Selfie.getHeight();
-
-		if(bitmap_w > bitmap_h){
-			img_Selfie_Landscape.setImageBitmap(bitmap_Selfie);
-		}else{
-			img_Selfie_Landscape.setVisibility(View.GONE);
-			img_Selfie_Portrait.setVisibility(View.VISIBLE);
-			img_Selfie_Portrait.setImageBitmap(bitmap_Selfie);
 		}
 
 		btn = (Button)findViewById(R.id.btn);
@@ -196,10 +181,10 @@ public class Olx_DialogNamaOutlet extends FragmentActivity{
 
 
 
-			if(url_gambar00 != null){
-				url_file00 = url_gambar00;
-				sourceFile00 = new File(url_file00);
-			}
+//			if(url_gambar00 != null){
+//				url_file00 = url_gambar00;
+//				sourceFile00 = new File(url_file00);
+//			}
 
 
 			try {
@@ -216,39 +201,39 @@ public class Olx_DialogNamaOutlet extends FragmentActivity{
 				conn.setRequestProperty("ENCTYPE", "multipart/form-data");
 				conn.setRequestProperty("Content-Type",
 						"multipart/form-data;boundary=" + boundary);
-				if(url_gambar00 != null){
-					conn.setRequestProperty("img0", url_file00);
-				}
+//				if(url_gambar00 != null){
+//					conn.setRequestProperty("img0", url_file00);
+//				}
 
 
 				dos = new DataOutputStream(conn.getOutputStream());
 
-				if(url_gambar00 != null){
-					fileInputStream00 = new FileInputStream(
-							sourceFile00);
-					//img 00
-					dos.writeBytes(twoHyphens + boundary + lineEnd);
-					dos.writeBytes("Content-Disposition: form-data; name=\"img0\";filename=\""
-							+ url_file00 + "\"" + lineEnd);
-					dos.writeBytes(lineEnd);
-
-					bytesAvailable = fileInputStream00.available();
-
-					bufferSize = Math.min(bytesAvailable, maxBufferSize);
-					buffer = new byte[bufferSize];
-
-					bytesRead = fileInputStream00.read(buffer, 0, bufferSize);
-					while (bytesRead > 0) {
-						dos.write(buffer, 0, bufferSize);
-						bytesAvailable = fileInputStream00.available();
-						bufferSize = Math.min(bytesAvailable, maxBufferSize);
-						bytesRead = fileInputStream00.read(buffer, 0, bufferSize);
-					}
-
-					dos.writeBytes(lineEnd);
-					dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
-
-				}
+//				if(url_gambar00 != null){
+//					fileInputStream00 = new FileInputStream(
+//							sourceFile00);
+//					//img 00
+//					dos.writeBytes(twoHyphens + boundary + lineEnd);
+//					dos.writeBytes("Content-Disposition: form-data; name=\"img0\";filename=\""
+//							+ url_file00 + "\"" + lineEnd);
+//					dos.writeBytes(lineEnd);
+//
+//					bytesAvailable = fileInputStream00.available();
+//
+//					bufferSize = Math.min(bytesAvailable, maxBufferSize);
+//					buffer = new byte[bufferSize];
+//
+//					bytesRead = fileInputStream00.read(buffer, 0, bufferSize);
+//					while (bytesRead > 0) {
+//						dos.write(buffer, 0, bufferSize);
+//						bytesAvailable = fileInputStream00.available();
+//						bufferSize = Math.min(bytesAvailable, maxBufferSize);
+//						bytesRead = fileInputStream00.read(buffer, 0, bufferSize);
+//					}
+//
+//					dos.writeBytes(lineEnd);
+//					dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+//
+//				}
 
 				// param kind
 				dos.writeBytes(twoHyphens + boundary + lineEnd);
@@ -332,9 +317,9 @@ public class Olx_DialogNamaOutlet extends FragmentActivity{
 				}
 
 
-				if(url_gambar00 != null){
-					fileInputStream00.close();
-				}
+//				if(url_gambar00 != null){
+//					fileInputStream00.close();
+//				}
 
 
 				dos.flush();

@@ -141,14 +141,14 @@ public class Olx_RecyclerAdapter_MenuUtama extends
                 arg0.img.setImageResource(R.drawable.menu_wp_absen);
                 arg0.wrapper.setBackgroundColor(context.getResources().getColor(
                         R.color.color_wp_darkblue));
-                arg0.tv_label.setText("Absen");
+                arg0.tv_label.setText("Input Nama Outlet / User Baru");
                 break;
             case 1:
                 arg0.img.setImageResource(R.drawable.menu_wp_outlet);
                 arg0.wrapper.setBackgroundColor(context.getResources().getColor(
                         R.color.color_wp_darkpurple));
 //			arg0.tv_label.setText("Input Penjualan");
-                arg0.tv_label.setText("Data Outlet");
+                arg0.tv_label.setText("Input Data Outlet / User");
 
 
                 break;
@@ -156,7 +156,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
                 arg0.img.setImageResource(R.drawable.menu_wp_history);
                 arg0.wrapper.setBackgroundColor(context.getResources().getColor(
                         R.color.color_wp_darkgreen));
-                arg0.tv_label.setText("Visit Activity");
+                arg0.tv_label.setText("Input Visit Activity");
 
 
                 break;
@@ -165,7 +165,7 @@ public class Olx_RecyclerAdapter_MenuUtama extends
                 arg0.wrapper.setBackgroundColor(context.getResources().getColor(
                         R.color.color_wp_darkorange));
 //			arg0.tv_label.setText("Info Toko");
-                arg0.tv_label.setText("History");
+                arg0.tv_label.setText("History Activity");
 
 
 //			arg0.img.setImageResource(R.drawable.menu_wp_issue);

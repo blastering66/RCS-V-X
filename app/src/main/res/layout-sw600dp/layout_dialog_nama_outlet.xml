@@ -30,20 +30,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <ImageView
-            android:id="@+id/img_selfie_landscape"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:scaleType="centerCrop"
-            />
-
-        <ImageView
-            android:id="@+id/img_selfie_portrait"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:scaleType="centerCrop"
-            android:visibility="gone"
-            />
 
         <Button
             android:id="@+id/btn"

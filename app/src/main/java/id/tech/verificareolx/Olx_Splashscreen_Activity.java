@@ -80,7 +80,7 @@ public class Olx_Splashscreen_Activity extends FragmentActivity {
 		img_Logo.setAnimation(animation);
 		wrapper.setAnimation(animation);
 		// img.startAnimation(animation);
-		new LoadViewState().execute();
+//		new LoadViewState().execute();
 
 		img_GetLoc.setOnClickListener(new OnClickListener() {
 
@@ -152,6 +152,8 @@ public class Olx_Splashscreen_Activity extends FragmentActivity {
 				new LoadNext().execute();
 			}
 		});
+
+		new LoadNext().execute();
 	}
 
 	private boolean getLocationNow(Context context) {
@@ -187,7 +189,7 @@ public class Olx_Splashscreen_Activity extends FragmentActivity {
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(4000);
 
 				if (!now_latitude.equals("0.0") && !now_longitude.equals("0.0")) {
 					locationGot = true;
@@ -211,7 +213,6 @@ public class Olx_Splashscreen_Activity extends FragmentActivity {
 
 			boolean logged = sh.getBoolean(Parameter_Collections.SH_LOGGED,
 					false);
-			if (locationGot) {
 				if (logged) {
 					// Olx_DialogLocationConfirmation dialog = new
 					// Olx_DialogLocationConfirmation(
@@ -235,14 +236,7 @@ public class Olx_Splashscreen_Activity extends FragmentActivity {
 					startActivity(load);
 					finish();
 				}
-			} else {
-				Olx_DialogLocationConfirmation dialog = new Olx_DialogLocationConfirmation();
-				dialog.setContext(getApplicationContext());
-				dialog.setText( "Can not get your Location, Check your GPS / Network");
-				dialog.setFrom(9);
-				dialog.setCancelable(false);
-				dialog.show(getSupportFragmentManager(), "");
-			}
+
 		}
 
 	}

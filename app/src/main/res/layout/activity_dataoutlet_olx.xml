@@ -58,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_outlet_phone"
                     android:imeOptions="actionNext"
+                    android:inputType="phone"
                     android:padding="10dp"
                     android:singleLine="true"
                     android:textColor="@color/bg_black" />
