@@ -92,21 +92,6 @@ public class Olx_UpdateBranding_Activity extends ActionBarActivity{
 		});
 
 		ed_ket= (EditText)findViewById(R.id.ed_ket);
-		btn = (Button) findViewById(R.id.btn);
-
-		btn.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent upload = new Intent(getApplicationContext(),
-						Olx_UploadImageDialog.class);
-				startActivityForResult(upload, CODE_UPLOAD);
-				// adapter = new CustomAdapter_Img(getApplicationContext(), 0,
-				// 0, data);
-
-			}
-		});
 	}
 	
 	@Override
